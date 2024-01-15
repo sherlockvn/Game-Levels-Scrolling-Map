@@ -24,14 +24,15 @@ class _MapHorizontalExampleState extends State<MapHorizontalExample> {
 
   @override
   void initState() {
+    super.initState();
     fillTestData();
   }
 
   List<PointModel> points = [];
 
   void fillTestData() {
-    for (int i = 0; i < 50; i++) {
-      points.add(PointModel(100, testWidget(i)));
+    for (int i = 0; i < 10; i++) {
+      points.add(PointModel(100, Container(color: Colors.red, width: 100, height: 100,)));
     }
   }
 
